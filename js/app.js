@@ -203,8 +203,8 @@ if ('geolocation' in navigator) {
 			}
 		}
 		apiConnect('https://api.wunderground.com/api/' + apiKey + '/forecast/conditions/q/' + lat + ',' + lng + '.json');
-	}, function() {
-		errorMsg = '<span class="error">We\'re sorry, but you must allow access to your current location to check the weather.</span>';
+	}, function(error) {
+		errorMsg = '<span class="error">' + error.message + '</span>';
 		main.innerHTML = errorMsg;
 		page.classList.add('active');
 		loader.classList.add('loaded');
