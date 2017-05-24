@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>FCC Weather App</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,800" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="page">
+		<div id="container">
+			<div class="flex">
+				<div id="main"></div>
+				<div id="addtl-info"></div>
+			</div>
+			<div id="forecast">
+				<div class="day" id="day1"></div>
+				<div class="day" id="day2"></div>
+				<div class="day" id="day3"></div>
+			</div>
+			<div id="settings">
+				<form action="" name="settings-form">
+					<fieldset class="radio-grp">
+						<legend>Units:</legend>
+						<input type="radio" value="imperial" name="radio-btns" id="radio-btn-1" checked>
+						<label for="radio-btn-1">Imperial</label>
+						<input type="radio" value="metric" name="radio-btns" id="radio-btn-2">
+						<label for="radio-btn-2">Metric</label>
+					</fieldset>
+				</form>
+				<span class="attr"><a href="http://www.wunderground.com/" target="_blank">Powered by Weather Underground <br><img src="https://icons.wxug.com/logos/PNG/wundergroundLogo_4c_rev_horz.png" alt="Weather Underground"></a></span>
+			</div>
+		</div>
+	</div>
+	<div id="loader">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+<script src="js/app-min.js"></script>
+</body>
+</html>
